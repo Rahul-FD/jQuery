@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event In jQuery</title>
+</head>
+<body>
+    <h1>Mouse Event In jQuery</h1>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, est commodi. Exercitationem iste dolorem ipsa voluptas
+        numquam quam provident placeat, non adipisci fugit quae necessitatibus veritatis eos incidunt qui suscipit!
+    </div>
+    <hr>
+    <input type="text" id="inp"></input>
+
+        <!-- jquery  -->
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- CSS JQuery  -->
+
+        <script>
+            $("body").css({ backgroundColor: "teal", textAlign: "center" });
+            $("#box").css({
+              backgroundColor: "pink",
+              color: "balck",
+              width: "400px",
+              margin: "auto",
+              border: "5px solid lime",
+            });
+            $("input").css({
+              backgroundColor: "pink",
+              color: "balck",
+              padding: "10px 30px",
+              margin: "10px",
+            });
+          </script>
+  
+
+          <script>
+              $(document).ready(function () {
+              // mouse enter
+              $("#box").mouseenter(function () {
+                  $("body").css({
+                      backgroundColor: "red",
+    
+                  });
+                });
+
+              // mouse leave
+              $("#box").mouseleave(function () {
+                  $("body").css({
+                      backgroundColor: "pink",
+    
+                  });
+                });
+    
+    
+         
+              });
+
+          </script>    
+         
+</body>
+</html>

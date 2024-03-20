@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide IN jQuery</title>
+</head>
+<body>
+    <h1>Sliders IN jQuery</h1>
+    <hr>
+    <div id="box">
+        <img src="../Task/image.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, est commodi. Exercitationem iste dolorem ipsa voluptas
+        numquam quam provident placeat, non adipisci fugit quae necessitatibus veritatis eos incidunt qui suscipit!
+    </div>
+    <hr>
+    <button id="btnslideUp">slideUp</button>
+    <button id="btnslideDown">slideDown</button>
+    <button id="btnslideToggle">slideToggle</button>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- CSS jQuery -->
+
+    <script>
+        $("body").css({ backgroundColor: "teal", textAlign: "center"});
+        $("img").css({
+            alineItem: "center",
+            margin: "20px 100px",
+        })
+        $("#box").css({
+        backgroundColor: "brown",
+        border: "5px solid black",
+        color: "black",
+        width: "800px",
+        margin: "auto",
+      });
+      $("button").css({
+        backgroundColor: "pink",
+        color: "black",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+
+
+    </script>
+
+    <script>
+        $(document).ready(function (){
+            //slideUp
+
+            $("#btnslideUp").click(function (){
+                $("#box").slideUp(2000)
+            });
+
+            //slideDown
+
+            $("#btnslideDown").click(function (){
+                $("#box").slideDown(2000)
+            });
+
+            //slideToggle
+
+            $("#btnslideToggle").click(function (){
+                $("#box").slideToggle(2000)
+            });
+
+
+
+        })
+    </script>
+</body>
+</html>
